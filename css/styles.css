@@ -65,6 +65,7 @@ img {
   border-radius: 50%;
 }
 
+
 .social-footer .icon-item {
   width: 40px;
   height: 40px;
@@ -150,11 +151,14 @@ img {
 
 .page-footer .footer {
   display: flex;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
+  justify-content: space-between;
   margin-top: -12px;
   align-items: baseline;
 }
-
+.logo-studio-footer{
+  display: flex;
+}
 .logo-link {
   font-family: "Raleway", sans-serif;
   font-size: 0;
@@ -569,6 +573,8 @@ img {
   height: 40px;
 }
 
+
+
 .icon-item .icon {
   fill: currentColor;
   width: 16px;
@@ -692,4 +698,40 @@ img {
   visibility: none;
   opacity: 0;
   pointer-events: none;
+}
+
+.social-footer .submit-button{
+  width: 165px;
+  height: 40px;
+  padding: 8 24;
+}
+
+.submit-button {
+  display: inline-flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  color: var(--white);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+  background-color: var(--iris);
+  border-radius: 4px;
+  border: 0;
+  fill: var(--white);
+}
+.email-text{
+width: 264px;
+height: 40px;
+color: -var(--white);
+/*opacity: 0;*/
+padding-left: 16px;
+border-radius: 4px;
+border: 1px solid var(--white);
+background-color: var(--navyblue);
+/*box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);*/
 }
