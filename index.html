@@ -565,24 +565,32 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+      
+        <div>
         <button class="modal-close" type="button" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#modal-close-icon"></use>
           </svg>
         </button>
+        </div>
+
+        <div class="contact-info">
+          <form class="contact-form">
+          <ul class="list">
+            <li class="item-form item-margin"><span>Leave your contacts and we will call you back</span></li>
+            <li class="item-form"><label class="label-style">Name<div class="item-input"><input type="text" class="input"/></div></label></li>
+            <li class="item-form"><label class="label-style">Phone<div class="item-input"><input type="tel" class="input"/></div></label></li>
+            <li class="item-form"><label class="label-style">Email<div class="item-input"><input type="email" class="input"/></div></label></li>
+            <li class="item-form"><label class="label-style">Comment<div><textarea name="feedback" rows="5" placeholder="Text Input"></textarea></div></label></li>
+            <li class="item-form"><input type="checkbox" /></li>
+            <li class="item-form"><input type="submit"></li>
+          </ul>
+        </form>
+        </div>
+      
       </div>
-      <div>
-        <form>
-        <ul class="list">
-          <li><input type="text"/></li>
-          <li><input type="tel"/></li>
-          <li><input type="email"/></li>
-          <li><textarea name="feedback" rows="5" placeholder="Text Input"></textarea></li>
-          <li><input type="checkbox" /></li>
-          <li><input type="submit"/></li>
-        </ul>
-      </form>
-      </div>
+        
+      
     </div>
 
     <script src="./js/modal.js"></script>
