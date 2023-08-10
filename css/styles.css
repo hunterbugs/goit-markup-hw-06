@@ -779,9 +779,28 @@ letter-spacing: 0.48px;
   border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.40));
 }
 
-.modal .item-form .item-input .input {
+.modal .item-form .comment{
+  display: flex;
+  padding-left: 16px;
+  padding-top: 8px;
+  height: 120px;
+  width: 360px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.40));
+}
+
+.modal .item-form .item-input .input{
   border: transparent;
 }
+
+.modal .item-form .item-input.comment .input{
+  border: transparent;
+  height: 100%;
+  width: 100%;
+}
+
 
 .modal .item-form.item-margin{
   margin-bottom: 16px;
