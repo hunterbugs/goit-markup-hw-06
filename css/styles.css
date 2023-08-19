@@ -142,7 +142,7 @@ img {
 
 .page-header {
   border-bottom: 1px solid var(--cornflower);
- /* height: 72px;*/
+  /* height: 72px;*/
 }
 
 .page-footer {
@@ -210,24 +210,26 @@ img {
   position: relative;
   color: var(--ocean);
 }
-.page::after{
+.page::after {
   width: 0px;
   content: "";
   border-radius: 4px;
   position: absolute;
   height: 4px;
   bottom: -1px;
-  transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page:hover::after,
-.page:focus::after{
-border: 2px solid var(--ocean);
-background-color: var(--ocean);
-width: 100%;
-left: 0px;
-bottom: -1px;
-height: 4px;
+.page:focus::after {
+  border: 2px solid var(--ocean);
+  background-color: var(--ocean);
+  width: 100%;
+  left: 0px;
+  bottom: -1px;
+  height: 4px;
 }
 
 .page.current::after {
@@ -703,6 +705,13 @@ height: 4px;
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /*box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);*/
 }
+
+.email-text:hover,
+.email-text:focus {
+  color: var(--white);
+  background-color: var(--navyblue);
+}
+
 .submit-button:hover {
   background-color: var(--ocean);
 }
@@ -812,7 +821,8 @@ height: 4px;
   line-height: 0.87;
   letter-spacing: 0.01em;
   color: var(--navyblue);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-textarea {
@@ -899,12 +909,11 @@ height: 4px;
 .form-checkbox {
   appearance: none;
 }
-.agree-description{
+.agree-description {
   display: flex;
   font-size: 12px;
   font-weight: 400;
   color: var(--lightslate);
-  
 }
 
 /*.visually-hidden {
